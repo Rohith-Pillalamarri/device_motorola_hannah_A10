@@ -11,10 +11,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/rr/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_hannah
+PRODUCT_NAME := rr_hannah
 PRODUCT_DEVICE := hannah
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := moto e5 plus
@@ -31,3 +31,14 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := motorola/hannah_t/hannah:8.0.0/OCP27.91-150-8/2:user/release-keys
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
+
+# RR Wallpapers
+BUILD_RR_WALLPAPERS := true
+
+# Bootanimation Resolution
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
+
+# RR Stuffs
+TARGET_FACE_UNLOCK_SUPPORTED := true
+RR_BUILDTYPE := UnOfficial

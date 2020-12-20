@@ -21,4 +21,12 @@
     <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
                   autodetected from the Configuration. -->
     <bool name="config_showNavigationBar">true</bool>
+
+    <!-- Whether the device supports Smart Pixels --> 
+<bool name="config_supportSmartPixels">true</bool>
+
+<!--Systeminfo for quick settings header -->
+<string name="config_sysBatteryTemp">/sys/class/power_supply/battery/temp</string>
+<string name="config_sysGPUFreq">/sys/kernel/gpu/gpu_clock</string>
+<string name="config_sysGPULoad">/sys/kernel/gpu/gpu_busy</string>
 </resources>

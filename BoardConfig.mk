@@ -33,3 +33,6 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Inherit from the proprietary version
 -include vendor/motorola/hannah/BoardConfigVendor.mk
+
+# Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
